@@ -55,7 +55,6 @@ SQLite3 database (`cameras.db`) stores cameras with the following fields:
 
 1. Клонировать репозиторий:
 2. Установить зависимости:
-3. 
 `pip install -r requirements.txt`
 
 4. Настроить файл `settings/config.py` с токеном бота и ID чата администратора.
