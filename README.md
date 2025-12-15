@@ -1,6 +1,6 @@
 # IP Camera Monitoring Bot / Бот для мониторинга IP-камер
 
-## English Version
+## English
 
 ### Description
 This Telegram bot monitors multiple IP cameras using YOLOv8 for human detection. When a person is detected on a camera, the bot sends a photo to the associated Telegram user. The bot is asynchronous and built with **Aiogram 3**, **OpenCV**, and **SQLite3**.
