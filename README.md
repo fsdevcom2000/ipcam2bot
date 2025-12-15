@@ -15,18 +15,35 @@ This Telegram bot monitors multiple IP cameras using YOLOv8 for human detection.
 ### Installation
 1. Clone the repository:
 2. Install dependencies:
-
-`pip install -r requirements.txt`
-
 3. Configure `settings/config.py` with your bot token and admin chat ID.
 ### Usage
 
 Run the bot:
-
 `python3 main.py`
 
 The bot will start polling and monitoring cameras automatically.
 
+### Usage
+
+Add IP Camera
+
+```
+/add Garage rtsp://192.168.1.10:554/stream
+```
+
+!!! Choose a short name without spaces
+
+Delete IP Camera
+
+```
+/del cam_id
+```
+
+List Of IP Cameras
+
+```
+/list
+```
 ### Database
 
 SQLite3 database (`cameras.db`) stores cameras with the following fields:
@@ -55,9 +72,7 @@ SQLite3 database (`cameras.db`) stores cameras with the following fields:
 
 1. Клонировать репозиторий:
 2. Установить зависимости:
-`pip install -r requirements.txt`
-
-4. Настроить файл `settings/config.py` с токеном бота и ID чата администратора.
+3. Настроить файл `settings/config.py` с токеном бота и ID чата администратора.
 
 ### Запуск
 
@@ -67,6 +82,27 @@ SQLite3 database (`cameras.db`) stores cameras with the following fields:
 
 Бот автоматически начнёт polling и мониторинг камер.
 
+### Использование
+
+Добавить камеру
+
+```
+/add Garage rtsp://192.168.1.10:554/stream
+```
+
+!!! Имя камеры не должно содержать пробелы.
+
+Удалить камеру
+
+```
+/del cam_id
+```
+
+Список камер
+
+```
+/list
+```
 ### База данных
 
 SQLite3 база (`cameras.db`) хранит камеры с полями:
