@@ -43,7 +43,8 @@ class MonitoringController:
             await self.bot.send_photo(
                 chat_id=cam['user_id'],
                 photo=FSInputFile(path=str(img)),
-                caption=f"🚨 Person detected: {cam['name']}"
+                caption=f"Detected: {cam['name']}"
             )
         finally:
             img.unlink(missing_ok=True)
+
